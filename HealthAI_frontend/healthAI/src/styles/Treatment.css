@@ -1,0 +1,67 @@
+/* Container */
+.treatment-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.treatment-container h1 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 25px;
+}
+
+/* Form styling */
+.treatment-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input */
+.treatment-container input {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.treatment-container input:focus {
+  border-color: #3182ce;
+}
+
+/* Button */
+.treatment-container button {
+  padding: 12px;
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.treatment-container button:hover {
+  background: #2b6cb0;
+}
+
+/* Plan display */
+.treatment-container .treatment-plan {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a202c;
+  white-space: pre-line;
+  word-wrap: break-word;
+}

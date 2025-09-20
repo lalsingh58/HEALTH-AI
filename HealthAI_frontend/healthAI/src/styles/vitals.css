@@ -1,0 +1,89 @@
+/* Container */
+.vitals-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.vitals-container h1,
+.vitals-container h2 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.vitals-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Input fields */
+.vitals-form input {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.vitals-form input:focus {
+  border-color: #3182ce;
+}
+
+/* Button */
+.vitals-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.vitals-form button:hover {
+  background: #2b6cb0;
+}
+
+/* History */
+.vitals-history {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Each history item */
+.vitals-item {
+  padding: 15px;
+  background: #edf2f7;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #1a202c;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.vitals-item p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .vitals-form {
+    grid-template-columns: 1fr;
+  }
+
+  .vitals-form button {
+    grid-column: span 1;
+  }
+}
